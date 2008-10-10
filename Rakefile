@@ -113,7 +113,6 @@ end
 ##############################################################################
 task :release => [:package] do
   sh %{rubyforge login}
-  sh %{rubyforge add_release not-naughty not-naughty #{VERS} pkg/#{NAME}-#{VERS}.tgz}
   sh %{rubyforge add_file not-naughty not-naughty #{VERS} pkg/#{NAME}-#{VERS}.gem}
 end
 

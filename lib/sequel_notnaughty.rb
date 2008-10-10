@@ -3,7 +3,7 @@ require 'rubygems'
 gem 'sequel', '>= 2.5.0'
 require 'sequel'
 
-#gem 'not-naughty', '0.6.1'
+gem 'not-naughty', '= 0.6.1'
 require 'not_naughty'
 
 ::NotNaughty::Validation.load(:acceptance, :confirmation, :format, :length, :numericality, :presence)
