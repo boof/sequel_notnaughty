@@ -1,7 +1,7 @@
 spec = Gem::Specification.new do |s|
   s.name              = "sequel_notnaughty"
-  s.version           = "0.6.1"
-  s.date              = "2008-10-10"
+  s.version           = "0.6.2"
+  s.date              = "2008-10-31"
   s.platform          = Gem::Platform::RUBY
   s.has_rdoc          = true
   s.extra_rdoc_files  = ["README.rdoc", "CHANGELOG.rdoc", "COPYING"]
@@ -11,7 +11,7 @@ spec = Gem::Specification.new do |s|
   s.email             = "boof@monkey-patch.me"
   s.homepage          = "http://monkey-patch.me/p/not-naughty"
   s.required_ruby_version = ">= 1.8.6"
-  s.add_dependency("not-naughty", "= 0.6.1")
+  s.add_dependency("not-naughty", "= 0.6.2")
 
   s.files = %w(COPYING README.rdoc Rakefile) + Dir.glob("lib/**/*")
   s.test_files = Dir.glob("spec/**/*")

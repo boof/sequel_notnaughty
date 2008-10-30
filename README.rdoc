@@ -1,0 +1,17 @@
+= Ruby-Sequels adapter to NotNaughty - The Validation Framework
+
+Validate all your Ruby Sequel models with NotNaughty:
+
+  class Sequel::Model
+    is :notnaughty
+  end
+
+Validate just specific models:
+
+  class Item < Sequel::Model
+    is :notnaughty
+
+    validates_uniqueness_of :name, :in => category
+  end
+
+For more examples see NotNaughty documentation.

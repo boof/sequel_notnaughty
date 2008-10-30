@@ -1,3 +1,6 @@
+=== 0.6.2 (2008-10-31)
+* updated to not-naughty 0.6.2
+
 === 0.6.1 (2008-10-10)
 * split from not-naughty gem
 * added gemspecs for github

@@ -3,11 +3,11 @@ require 'rubygems'
 gem 'sequel', '>= 2.5.0'
 require 'sequel'
 
-gem 'not-naughty', '= 0.6.1'
+gem 'not-naughty', '= 0.6.2'
 require 'not_naughty'
 
-::NotNaughty::Validation.load(:acceptance, :confirmation, :format, :length, :numericality, :presence)
-require "#{ File.dirname __FILE__ }/validations/uniqueness_validation.rb"
+NotNaughty::Validation.load_paths << File.join(%W[#{ File.dirname __FILE__ } validations])
+NotNaughty::Validation.load(:acceptance, :confirmation, :format, :length, :numericality, :presence, :uniqueness)
 
 module Sequel #:nodoc:
   module Plugins #:nodoc:
