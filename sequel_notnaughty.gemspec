@@ -13,8 +13,8 @@ spec = Gem::Specification.new do |s|
   s.required_ruby_version = ">= 1.8.6"
   s.add_dependency("not-naughty", "= 0.6.2")
 
-  s.files = %w(COPYING README.rdoc Rakefile) + Dir.glob("lib/**/*")
-  s.test_files = Dir.glob("spec/**/*")
+  s.files = %w(COPYING README.rdoc Rakefile) + ["lib/sequel_notnaughty.rb", "lib/validations", "lib/validations/uniqueness_validation.rb"]
+  s.test_files = ["spec/rcov.opts", "spec/sequel_spec_helper.rb", "spec/sequel_validated_spec.rb", "spec/spec.opts", "spec/spec_helper.rb", "spec/validations_spec.rb"]
 
   s.require_path = "lib"
 
